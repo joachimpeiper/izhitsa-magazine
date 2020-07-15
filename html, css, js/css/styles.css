@@ -1,0 +1,90 @@
+input {
+    outline:none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #FBF8F8;
+    font-family: 'Avenir Next';
+    font-weight: bold;
+}
+
+.nav-wrapper {
+    margin-top: 43px;
+    background-color: #fff;
+    font-family: 'Avenir Next', bold;
+    width: 1113px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*Из Figm'ы:*/
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menuHeadings {
+    font-size: 18px;
+    font-family: 'Avenir Next';
+    padding-left: 22px;
+    padding-right: 22px;
+    height: 50px;
+}
+
+#headerText {
+    /*display: inline-table;
+    vertical-align: middle;
+    line-height:15px;*/
+}
+
+.menuHeadings:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.menuHeadings:active {
+    background-color: #000;
+    color: #fff;
+}
+
+.patreonLogo {
+    width: 37.57px;
+    height: 37.57px;
+    margin-right: 200px;
+}
+
+.header_ln {
+    width: 1112px;
+    position: absolute;
+    margin-top: 50px;
+    box-shadow: none;
+}
+
+.downMenuHeadings {
+    font-size: 14px;
+    font-family: 'Avenir Next';
+    font-weight: normal;
+    padding-left: 22px;
+    padding-right: 22px;
+    height: 50px;
+    margin-top: 50px;
+
+
+}
+
+.downMenuHeadings:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#downHeaderText {
+    display: inline-table;
+    vertical-align: middle;
+    line-height:20px;
+}

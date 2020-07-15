@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Розыгрыш книг по русской истории — &laquo;Ижица&raquo;</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="logo5.ico"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Prata&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Playfair+Display+SC:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+        <input type="text" id="id1input">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script defer  src="script.js"></script>
+        <script defer  src="comments.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script> 
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+    </head>
+    
+ <body class="initiation-body">
+     <!--class="initiation-body" вставить в body, если нужен другой фон страницы--> 
+     <svg display="none">
+        <symbol id="nav-login" viewBox="-4 0 456 456">
+	       <g>
+		      <path d="m376 152c0-83.949219-68.050781-152-152-152s-152 68.050781-152 152h-72v304h448v-304zm-144 159.359375v88.640625c0 4.417969-3.582031 8-8 8s-8-3.582031-8-8v-88.640625c-29.070312-4.195313-49.960938-30.140625-47.855469-59.433594 2.101563-29.296875 26.484375-51.992187 55.855469-51.992187s53.753906 22.695312 55.855469 51.992187c2.105469 29.292969-18.785157 55.238281-47.855469 59.433594zm-144-159.359375c0-75.109375 60.890625-136 136-136s136 60.890625 136 136zm0 0"/>
+	       </g>
+        </symbol>
+    </svg>
+    <svg display="none">
+        <symbol id="nav-search" viewBox="0 0 511.999 511.999">
+            <g>
+                          <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732
+                         c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667
+                         c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z"/>
+                       </g>
+        </symbol>
+    </svg>
+    <svg display="none">
+        <symbol id="nav-cancel" viewBox="0 0 329.26933 329">
+            <g>
+        <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+</g>
+        </symbol>
+    </svg>
+    <svg display="none">
+        <symbol id="right-arrow" viewBox="0 0 268.832 268.832">
+            <g>
+                          <path d="M265.171,125.577l-80-80c-4.881-4.881-12.797-4.881-17.678,0c-4.882,4.882-4.882,12.796,0,17.678l58.661,58.661H12.5
+		c-6.903,0-12.5,5.597-12.5,12.5c0,6.902,5.597,12.5,12.5,12.5h213.654l-58.659,58.661c-4.882,4.882-4.882,12.796,0,17.678
+		c2.44,2.439,5.64,3.661,8.839,3.661s6.398-1.222,8.839-3.661l79.998-80C270.053,138.373,270.053,130.459,265.171,125.577z"/>
+                       </g>
+        </symbol>
+    </svg>
+
+    <header class="nav">
+        <center>      
+            <div class="nav-wrapper-searching">
+                <div class="nav-wrapper-searching-container">
+                    <tr class="nav-wrapper-container-row">
+                       <td>
+                            <div class="nav-wrapper-searching-container-block"><svg class="search-ico">
+                                <use xlink:href="#nav-search"></use>
+                            </svg></div>
+                        </td>
+                        <td>
+                        <div class="nav-wrapper-searching-container-block"><input type="search" placeholder="Поиск по &laquo;Ижице&raquo;" autofocus = "autofocus"/></div></td>
+                        <td>
+                        <div class="nav-wrapper-searching-container-block-cancel"><svg class="search-cancel">
+                                <use xlink:href="#nav-cancel"></use>
+                            </svg></div>
+                        </td>
+                        
+                    </tr>
+                </div>
+                
+
+            </div>
+            
+            <div class="nav-wrapper">
+            <table class="nav-wrapper-container" border="0" cellspacing="0px">
+                    <tr class="nav-wrapper-container-row">
+                        <td class="nav-logo-wrapper">
+                            <a class="nav-logo" href="index.html">V</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <div class="nav-hr"></div>    
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="events.html">события</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="history.html">история</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="podcasts.html">подкасты</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="philosophy.html">философия</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="about.html">о &laquo;ижице&raquo;</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="subscribe.html">подписка</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="initiation.html">стать автором</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <svg class="search-ico">
+                            <use xlink:href="#nav-search"></use>
+                            </svg>
+                        </td>
+                    </tr>
+                </table> 
+            </div>
+            <div class="nav-mask"></div>
+            <div class="nav-list">
+                <div class="nav-list-links-wrapper">
+                    <p>ПОПУЛЯРНЫЕ ЗАПРОСЫ</p>
+                </div>
+                <div class="nav-list-links">
+                    <a href=""><p>Миф или реальность</p></a>
+                    <a href=""><p>От Лебовски до Достоевского</p></a>
+                    <a href=""><p>Розыгрыш</p></a>
+                    <a href=""><p>Поэзия Серебряного века</p></a>
+                    <a href=""><p>Мальтузианская ловушка</p></a>
+                </div>
+            </div>
+        </center>
+        <script>
+            
+        </script>
+     </header>
+     
+        
+     <div class="article-content">
+        <div class="article-content-head">
+            <div class="article-content-head-type">
+                <p><a href="">СОБЫТИЯ</a></p></div>
+             <div class="article-content-head-name"><p>Розыгрыш книг по русской истории</p></div>
+            <div class="article-content-head-desc">
+                <p>&laquo;Нельзя и стыдно перенимать чужой образ жизни, строй чувства и порядок отношений. Каждый порядочный народ все это должен иметь свое, как у каждого порядочного человека должна быть своя голова и своя жена&raquo; &mdash; Василий Осипович Ключевский.</p>
+            </div>
+            <div class="article-content-head-author">
+                <p><a href="">РЕДАКЦИЯ</a><br> <span>30 АПРЕЛЯ, 2020</span></p></div>
+                <center><div class="article-content-head-tags-wrapper">
+                    <a onclick="Share.telegram('URL','TITLE')"><div class="article-content-head-tags-tag"><img src="img/tg.png"></div></a>
+                    <a     onclick="Share.vkontakte('URL','TITLE','IMG_PATH','DESC')">
+                    <div class="article-content-head-tags-tag"><img src="img/vk.png"></div></a>
+                    <a onclick="Share.twitter('URL','TITLE')"><div class="article-content-head-tags-tag"><img src="img/twitter.png"></div></a>
+                    <a onclick="Share.facebook('URL','TITLE','IMG_PATH','DESC')">
+                    <div class="article-content-head-tags-tag"><img src="img/fb.png"></div></a>
+                </div></center>
+            <!--<div class="article-content-text-wrapper-sources"></div>-->
+        </div>
+        <div class="article-content-cover-wrapper"><img src ="img/events-img/iu-3.jpg"></div>
+            <div class="article-content-text-wrapper">
+                <div class="article-content-text-wrapper-txt">
+                    <span>Р</span>овно через один месяц мы разыграем среди наших читателей фундаментальный труд великого русского историка, писателя и публициста Василия Осиповича Ключевского - &laquo;Курс русской истории&raquo;. Для участия в розыгрыше достаточно лишь распространить эту запись в социльных сетях (блок ссылок над обложкой) и написать в комментариях к этой записи, что вы участвуете в конкурсе.<br><br>Итоги будут подводиться на  трансляция 15 июля на нашем Youtube-канале.<br><br>Всем удачи!</div>
+            </div>
+            <div class="hr"></div>
+            <div class="article-content-comments">
+                <div class="article-content-comments-head">
+                    <div class="article-content-comments-textarea"><textarea id="article-content-comments-textarea-this" type="text" rows="6" name="comment"> </textarea></div>
+                    <div id="article-content-comments-sendbutton"><p>Отправить</p></div>
+                    <div class="article-content-comments-header"><p>ИМЯ:</p></div>
+                    <div class="article-content-comments-inputname-wrapper"><input id="article-content-comments-inputname" type="text"></div>
+                </div>
+                <div class="article-content-comments-commentswrapper">
+                    <div class="article-content-comments-comment">
+                        <div id="article-content-comments-comment-nameauthor"><p>ыоватл</p></div>
+                        <div id="article-content-comments-comment-date">22 АПРЕЛЯ 2020<p></p></div>
+                        <div id="article-content-comments-comment-text"><p></p>фвфафафаафаыа</div>
+                    </div>
+                </div>
+                <div class="article-content-comments-commentswrapper-answer">
+                    <div class="article-content-comments-comment">
+                        <div id="article-content-comments-comment-nameauthor"><p>ыоватл</p></div>
+                        <div id="article-content-comments-comment-date">22 АПРЕЛЯ 2020<p></p></div>
+                        <div id="article-content-comments-comment-text"><p></p>фвфафафаафаыа</div>
+                    </div>
+                </div>
+            </div>
+     </div>
+     
+     <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-content-name">&laquo;Ижица&raquo;</div>
+            <div class="footer-content-navlinks">
+                <a href="about.html"><p class="footer-content-navlinks-text-main">О ПРОЕКТЕ</p></a>
+                <a href="subscribe.html"><p class="footer-content-navlinks-text">ПОДПИСКА</p></a>
+                <a href="mailto:izhitsa.magazine@protonmail.com"><p class="footer-content-navlinks-text">ОБРАТНАЯ СВЯЗЬ</p></a>
+                <a href=""><p class="footer-content-navlinks-text">НАША СЕТЬ</p></a>
+            </div>
+            <div class="footer-content-hr"></div>
+            <div class="footer-content-soclinks">
+                <div class="footer-content-soclinks-section">
+                    <div class="footer-content-soclinks-imgwrap"><img class="footer-content-soclinks-img" src="img/logotype's/vk logo.png">
+                    </div>
+                    <div class="footer-content-soclinks-section-text"><p>ВКонтакте</p></div>
+                </div>
+                <div class="footer-content-soclinks-section">
+                    <div class="footer-content-soclinks-imgwrap"><img class="footer-content-soclinks-img" src="img/logotype's/youtube logo.png">
+                    </div>
+                    <div class="footer-content-soclinks-section-text"><p>Youtube</p></div>
+                </div>
+                <div class="footer-content-soclinks-section">
+                    <div class="footer-content-soclinks-imgwrap"><img class="footer-content-soclinks-img" src="img/logotype's/telegram logo.png">
+                    </div>
+                    <div class="footer-content-soclinks-section-text"><p>Telegram</p></div>
+                </div>
+                <div class="footer-content-soclinks-section">
+                    <div class="footer-content-soclinks-imgwrap"><img class="footer-content-soclinks-img" src="img/logotype's/rozanov.png">
+                    </div>
+                    <div class="footer-content-soclinks-section-text"><p>Розанов Клуб</p></div>
+                </div>
+                <div class="footer-content-soclinks-section">
+                    <div class="footer-content-soclinks-imgwrap"><img class="footer-content-soclinks-img" src="img/logotype's/voz.png">
+                    </div>
+                    <div class="footer-content-soclinks-section-text"><p>Возв. Европы</p></div>
+                </div>
+            </div>
+            <div class="footer-content-hr"></div>
+            <div class="footer-content-description"><p>Журнал русского консервативного общества «Ижица». Копирование материалов сайта без разрешения запрещено &copy; Izhitsa Magazine 2020</p></div>
+            <div class="footer-content-signature"><p><a href="https://t.me/helgeheyer">c’est severus</a> x <a href="">amaydane</a></p></div>
+        </div>
+    </footer>
+
+  </body>
+</html>

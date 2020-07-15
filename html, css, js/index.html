@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Ижицкий журнал</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="logo5.ico"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Prata&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <link rel="stylesheet" href="jquery.mCustomScrollbar.css">
+        <input type="text" id="id1input">
+        <script defer  src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+    </head>
+    
+ <body></body>
+    <svg display="none">
+        <symbol id="nav-login" viewBox="-4 0 456 456">
+	       <g>
+		      <path d="m376 152c0-83.949219-68.050781-152-152-152s-152 68.050781-152 152h-72v304h448v-304zm-144 159.359375v88.640625c0 4.417969-3.582031 8-8 8s-8-3.582031-8-8v-88.640625c-29.070312-4.195313-49.960938-30.140625-47.855469-59.433594 2.101563-29.296875 26.484375-51.992187 55.855469-51.992187s53.753906 22.695312 55.855469 51.992187c2.105469 29.292969-18.785157 55.238281-47.855469 59.433594zm-144-159.359375c0-75.109375 60.890625-136 136-136s136 60.890625 136 136zm0 0"/>
+	       </g>
+        </symbol>
+    </svg>
+    <svg display="none">
+        <symbol id="nav-search" viewBox="0 0 511.999 511.999">
+            <g>
+                          <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732
+                         c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667
+                         c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z"/>
+                       </g>
+        </symbol>
+    </svg>
+    <svg display="none">
+        <symbol id="nav-cancel" viewBox="0 0 329.26933 329">
+            <g>
+        <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+</g>
+        </symbol>
+    </svg>
+    <svg display="none">
+        <symbol id="right-arrow" viewBox="0 0 268.832 268.832">
+            <g>
+                          <path d="M265.171,125.577l-80-80c-4.881-4.881-12.797-4.881-17.678,0c-4.882,4.882-4.882,12.796,0,17.678l58.661,58.661H12.5
+		c-6.903,0-12.5,5.597-12.5,12.5c0,6.902,5.597,12.5,12.5,12.5h213.654l-58.659,58.661c-4.882,4.882-4.882,12.796,0,17.678
+		c2.44,2.439,5.64,3.661,8.839,3.661s6.398-1.222,8.839-3.661l79.998-80C270.053,138.373,270.053,130.459,265.171,125.577z"/>
+                       </g>
+        </symbol>
+    </svg>
+    <svg display="none">
+        <symbol id="play-ico" viewBox="0 0 494.148 494.148">
+	       <g>
+		      <path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124
+			c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884
+			C432.632,229.572,422.964,213.288,405.284,201.188z"/>
+	       </g>
+        </symbol>
+    </svg>
+    <svg display="none">
+        <symbol id="play-ico2" viewBox="0 0 494.148 494.148">
+	       <g>
+		      <path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124
+			c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884
+			C432.632,229.572,422.964,213.288,405.284,201.188z"/>
+	       </g>
+        </symbol>
+    </svg>
+    <svg display="none">
+        <symbol id="pause-ico" viewBox="0 0 512 512">
+	       <g>
+		      <path d="M181.333,0H74.667c-17.643,0-32,14.357-32,32v448c0,17.643,14.357,32,32,32h106.667c17.643,0,32-14.357,32-32V32
+			C213.333,14.357,198.976,0,181.333,0z"/>
+               <path d="M437.333,0H330.667c-17.643,0-32,14.357-32,32v448c0,17.643,14.357,32,32,32h106.667c17.643,0,32-14.357,32-32V32
+			C469.333,14.357,454.976,0,437.333,0z"/>
+	       </g>
+        </symbol>
+    </svg>
+     
+    <header class="nav">
+        <center>      
+            <div class="nav-wrapper-searching">
+                <div class="nav-wrapper-searching-container">
+                    <tr class="nav-wrapper-container-row">
+                       <td>
+                            <div class="nav-wrapper-searching-container-block"><svg class="search-ico">
+                                <use xlink:href="#nav-search"></use>
+                            </svg></div>
+                        </td>
+                        <td>
+                        <div class="nav-wrapper-searching-container-block"><input placeholder="Поиск по &laquo;Ижице&raquo;"></div></td>
+                        <td>
+                        <div class="nav-wrapper-searching-container-block-cancel"><svg class="search-cancel">
+                                <use xlink:href="#nav-cancel"></use>
+                            </svg></div>
+                        </td>
+                        
+                    </tr>
+                </div>
+                
+
+            </div>       
+            <div class="nav-wrapper">
+            <table class="nav-wrapper-container" border="0" cellspacing="0px">
+                    <tr class="nav-wrapper-container-row">
+                        <td class="nav-logo-wrapper">
+                            <a class="nav-logo" href="index.html">V</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <div class="nav-hr"></div>    
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="events.html">события</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="history.html">история</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="podcasts.html">подкасты</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="philosophy.html">философия</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="about.html">о &laquo;ижице&raquo;</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="subscribe.html">подписка</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <a class="nav-link" href="initiation.html">стать автором</a>
+                        </td>
+                        <td class="nav-wrapper-container-row-link">
+                            <svg class="search-ico">
+                            <use xlink:href="#nav-search"></use>
+                            </svg>
+                        </td>
+                    </tr>
+                </table> 
+            </div>
+            <div class="nav-mask"></div>
+            <div class="nav-list">
+                <div class="nav-list-links-wrapper">
+                    <p>ПОПУЛЯРНЫЕ ЗАПРОСЫ</p>
+                </div>
+                <div class="nav-list-links">
+                    <a href=""><p>Миф или реальность</p></a>
+                    <a href=""><p>От Лебовски до Достоевского</p></a>
+                    <a href=""><p>Розыгрыш</p></a>
+                    <a href=""><p>Поэзия Серебряного века</p></a>
+                    <a href=""><p>Мальтузианская ловушка</p></a>
+                </div>
+            </div>
+        </center>
+     </header>
+     
+     
+
+    <a href="https://www.youtube.com/watch?v=8F67i-P1pCw"><div class="intro">
+        <!--<div class="intro-text"><p>Смотреть</p></div>-->
+    </div></a>
+
+    <div class="tape-ad">
+      <div class="tape-ad-hr1-top"></div>
+       <div class="tape-ad-hr2-top"></div>
+       <span class="tape-ad-name">ОБЪЯВЛЕНИЯ</span>
+    <div class="tape-ad-desc">Краткие объявления локальных событий
+        насущного дня</div>
+        <div class="tape-ad-content">
+            <div class="tape-ad-middle">
+                <a href="subscribe.html"><div class="tape-ad-middle-img"><img  src="img/adverts-img/community.png"></div>
+                <p class="tape-ad-middle-text">Подписка
+                    позволяет читать премиум-материалы</p></a>
+            </div>
+            <div class="tape-ad-middle">
+                <a href=""><div class="tape-ad-middle-img"><img src="img/adverts-img/smuta.png"></div>
+                <p class="tape-ad-middle-text">Трансляция по истории русской смуты <br>21:00</p></a>
+            </div>
+            <div class="tape-ad-middle-hiscal">
+                <div class="tape-ad-middle-hiscal-container">
+                <a href="history-calendar.html"><div class="tape-ad-middle-date">
+                    <script language="javascript" type="text/javascript">
+                        var d = new Date();
+                        var day=new Array("Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота");
+                        var month=new Array("января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря");
+                        document.write(d.getDate());
+                    </script>
+                </div></a>
+                <a href="history-calendar.html"><div class="historycal-ad-middle-text"><p>Исторический календарь</p></div></a>
+                </div>
+            </div>
+            <div class="tape-ad-middle">
+                <a href="kluch.html"><div class="tape-ad-middle-img"><img src="img/adverts-img/kluch.png"></div>
+                <p class="tape-ad-middle-text">Розыгрыш трех томов русской истории <br>09.05.20</p></a>
+            </div>
+            <div class="tape-ad-middle">
+                <a href=""><div class="tape-ad-middle-img"><img  src="img/adverts-img/logo.png"></div>
+            <p class="tape-ad-middle-text">День рождения Ижицы<br>01.09.20</p></a>
+            </div>
+        </div>
+       <div class="tape-ad-hr1-left"></div>
+       <div class="tape-ad-hr2-right"></div>
+       <div class="tape-ad-hr1-bottom"></div>
+       <div class="tape-ad-hr2-bottom"></div>
+       <a href=""><div class="tape-ad-archive"><p>Архив</p></div></a>
+    </div>
+
+
+
+    <center><div class="articles-container">
+        
+        <table class="articles-container-table" border="0" cellspacing="0px">
+           <tr class="articles-container-row">
+               <td class="articles-container-row-article">
+                    <a href=""><div class="articles-container-row-article-imgwrap">
+                    <img class="articles-container-row-article-img" src="img/articles-img/talant.jpg">
+                    </div></a>
+                   <div class="articles-container-row-article-info">30 января &#8226; <a href="">Артур Эльбрусский</a> &#8226; <a href="">Эссе</a>
+                    </div>
+                    <a href=""><div class="articles-container-row-article-name">Бессмертен ли талант</div></a>
+                    <div class="articles-container-row-article-description">Сравнивая культуру Российской Империи и СССР невольно спросишь себя: в чем причина появления талантов при одном режиме и их практически полное отсутствие в другом?</div>
+               </td>
+               <td class="articles-container-row-article">
+                    <a href="myth-or-reality.html"><div class="articles-container-row-article-imgwrap">
+                    <img class="articles-container-row-article-img" src="img/articles-img/myth-or-reality/myth.jpg">
+                    </div></a>
+                   <div class="articles-container-row-article-info">11 января &#8226; <a href="">Данил Одинов</a> &#8226; <a href="">Философия</a> &#8226; <a href="subscribe.html"><div class="articles-container-row-article-info-premium">Premium</div></a></div>
+                    <a href="myth-or-reality.html"><div class="articles-container-row-article-name">Миф или реальность</div></a>
+                    <div class="articles-container-row-article-description">Важность античного мифа на сегодняшний день опустела. Стеклянные глаза незрячих толп не испытывают интереса к тому, что должно направлять, привносить некоторый смысл в лишенное рассудка существование современных офисных рабочих.</div>
+               </td>
+               <td class="articles-container-row-article">
+                    <a href=""><div class="articles-container-row-article-imgwrap">
+                    <img class="articles-container-row-article-img" src="img/articles-img/lebovsky.jpg">
+                    </div></a>
+                   <div class="articles-container-row-article-info">28 декабря &#8226; <a href="">Кирилл Галин</a> &#8226; <a href="">Литература</a></div>
+                    <a href=""><div class="articles-container-row-article-name">От Лебовски до Достоевского</div></a>
+                    <div class="articles-container-row-article-description">В продолжении обсуждения русской литературы, раскроем два вида конфликтов и покажем на примерах, насколько некоторые режиссеры близки к идеям русских классиков.</div>
+               </td>
+            </tr>
+            <tr class="articles-container-row">
+               <td class="articles-container-row-article">
+                    <a href=""><div class="articles-container-row-article-imgwrap">
+                    <img class="articles-container-row-article-img" src="img/articles-img/lie.jpg">
+                    </div></a>
+                   <div class="articles-container-row-article-info">15 декабря &#8226; <a href="">Артур Эльбрусский</a> &#8226; <a href="">История</a></div>
+                    <a href=""><div class="articles-container-row-article-name">Ложь, в которую верят все</div></a>
+                    <div class="articles-container-row-article-description">В поисках материала я отправился туда, где свое начало имеют все легенды и байки советских фантастов, которые мы слышим до сих пор от старших и, кстати говоря, даже молодых поколений. Я посетил колыбель самых крупных мифов и фальсификаций, с которыми здравомыслящие люди борются до сих пор, а именно — архив газеты «Правда».</div>
+               </td>
+               <td class="articles-container-row-article">
+                    <a href=""><div class="articles-container-row-article-imgwrap">
+                    <img class="articles-container-row-article-img" src="img/articles-img/poetica.jpg">
+                    </div></a>
+                   <div class="articles-container-row-article-info">30 ноября &#8226; <a href="">Кирилл Галин</a> &#8226; <a href="">Литература</a></div>
+                    <a href=""><div class="articles-container-row-article-name">Поэтика русской любви</div></a>
+                    <div class="articles-container-row-article-description">Понятие любви находится в нескольких плоскостях, это и вызывает трудности для его определения. Никто не поспорит, что главное культурное достояние России - литература. Окунемся в мир рукописей и выясним, как русские классики видели «русскую любовь».
+                    </div>
+               </td>
+               <td class="articles-container-row-article">
+                    <a href=""><div class="articles-container-row-article-imgwrap">
+                    <img class="articles-container-row-article-img" src="img/articles-img/manip.jpg">
+                    </div></a>
+                   <div class="articles-container-row-article-info">15 ноября &#8226; <a href="">Кирилл Галин</a> &#8226; <a href="">Психология</a> &#8226; <a href="subscribe.html"><div class="articles-container-row-article-info-premium">Premium</div></a></div>
+                    <a href=""><div class="articles-container-row-article-name">Манипуляция сознанием или как стать Гретой Тунберг. Теория Курта Левина</div></a>
+                    <div class="articles-container-row-article-description">В эпоху гипперинформационного общества необходимо закалять иммунитет нашего мозга. Этого можно добиться, прыгая по персоналиям тех, кто непосредственно принимал участие в формировании такого общества. Сегодня речь пойдет о теоретике манипуляции массовым сознанием, психологе Курте Цадеке Левине.</div>
+               </td>
+            </tr>
+            <tr class="articles-container-row">
+               <td class="articles-container-row-article">
+                    <a href=""><div class="articles-container-row-article-imgwrap">
+                    <img class="articles-container-row-article-img" src="img/articles-img/ruslang.jpg">
+                    </div></a>
+                   <div class="articles-container-row-article-info">1 ноября &#8226; <a href="">Федор Достоевский</a> &#8226; <a href="">Эссе</a></div>
+                    <a href=""><div class="articles-container-row-article-name">Размышления о русском языке</div></a>
+                    <div class="articles-container-row-article-description">Эта статья, по-существу, включает в себя две статьи Фёдора Михайловича Достоевского из его личного журнала «Дневник писателя»: «Русский или французский язык?» и «На каком языке говорить отцу отечества?». Обе статьи были выпущены журналом последовательно.</div>
+               </td>
+               <td class="articles-container-row-article">
+                    <a href=""><div class="articles-container-row-article-imgwrap">
+                    <img class="articles-container-row-article-img" src="img/articles-img/karl.jpg">
+                    </div></a>
+                   <div class="articles-container-row-article-info">26 января &#8226; <a href="">Георгий Двинский</a> &#8226; <a href="">История</a></div>
+                    <a href=""><div class="articles-container-row-article-name">Карл XII: Король-солдат</div></a>
+                    <div class="articles-container-row-article-description">27 июня 1682 года, под воем ветра бушевавшей северной непогодой и нагнетающими тучами, в палатах замка Трёх Корон, король Швеции Карл XI написал следующие строки: «Семнадцатого в субботу без четверти 7 утра моя супруга разрешилась сыном. Хвала Господу Богу, который помог ей!» — родился будущий король-солдат, Северный Александр Македонский, а для кого-то призрак восставший из гуннских могил — будущий король Швеции Карл XII.
+                    </div>
+               </td>
+               <td class="articles-container-row-mailing">
+                    <div class="mail-name">Izhitsa Mail</div>
+                    <div class="mail-description">Вы можете подписаться на нашу почтовую рассылку, благодаря которой получите возможность всегда быть в курсе событий и нашего общества.</div>
+                    <div class="mail-hide"></div>
+                    <div class="mail-input-wrap"><input class="mail-input-wrap-input"></div>
+                    <div class="mail-subscribe">
+                    <p>Подписаться</p>
+                   </div>
+               </td>
+            </tr>
+        </table>
+    </div></center>
+     
+     <center><div class="continue"><p>Загрузить еще</p></div></center>
+     
+    <div class="podcasts-wrapper">
+        <div class="podcasts-container-name"><p><span>&#183;</span> Аудиолекции <span onclick="test()">&#183;</span></p></div>
+        
+        <div class="prev n"><a href="#"><svg class="podcasts-container-arrow-left">
+                    <use xlink:href="#right-arrow"></use>
+                </svg></a></div>
+        <div class="slider">
+            <div class="slider-container curry">  
+                <div id="slider-container-play">
+                    
+                    <svg class="play-ico2">
+                        <use xlink:href="#play-ico2"></use>
+                    </svg>
+                    <svg class="play-ico">
+                        <use xlink:href="#play-ico"></use>
+                    </svg>
+                    <audio id="slider-container-play-audio">
+                        <source src="audio/podcasts/marx.mp3"/> 
+                    </audio>
+                    <p onclick="test()" id="slider-container-play-point">•</p>
+                    <svg id="pause-icon">
+                        <use xlink:href="#pause-ico"></use>
+                    </svg>
+                </div> 
+                <script>
+                    var radio = new Audio();
+                    radio.src = "audio/podcasts/marx.mp3";
+                    document.querySelector('#slider-container-play-point').onclick = function() {
+                    $('#slider-container-play-point').css('color', 'white');
+                    $('#slider-container-play').css('background', 'white');
+                    $('#slider-container-play-point').css('opacity', '1');
+                    $('#pause-icon').css('opacity', '1');
+                    if (radio.paused == true) {
+                    radio.play();
+                        document.querySelector('.radioPlay').innerHTML = 'pause';
+
+                    } else {
+                    radio.pause();
+                    $('.play-ico').css('opacity', '0');
+                    $('.play-ico2').css('opacity', '1');
+                    $('#slider-container-play-point').css('opacity', '0');
+                    $('#slider-container-play').css('background', '1f1f1f');
+                    $('#pause-icon').css('opacity', '0');
+                    document.querySelector('.radioPlay').innerHTML = 'play';
+                        }
+                    }
+                </script>
+                <div class="slider-container-img">
+                    <img class="slider-container-theimg" src="img/podcasts-img/age.jpg">
+                </div>
+                <div class="slider-container-info">
+                    <div class="slider-container-info-authors"><p>1/1&emsp;|&emsp;	Рассказывает <a href="">Кирилл Галин</a></p></div>
+                    <div class="slider-container-info-date"><p>24 минуты</p></div>
+                </div>
+                <div class="slider-container-name">Поэзия Серебряного века</div>
+                <div class="slider-container-desk">
+                Каковым был век расцвета русской культуры, и как жили его главный фигуры. Быт, нравы, увлечения и пороки поэтов Серебряного века.</div>
+                <div class="slider-container-buttons">
+                    <div class="slider-container-buttons-inborder"><p>Читать</p></div>
+                    <div class="slider-container-buttons-inborder"><p>Скачать</p></div>
+                    <div class="slider-container-buttons-donate"><p>Пожертвовать средства авторам</p></div>
+                </div>
+            </div>
+            <div class="slider-container">  
+                <div id="slider-container-play">
+                    
+                    <svg class="play-ico2">
+                        <use xlink:href="#play-ico2"></use>
+                    </svg>
+                    <svg class="play-ico">
+                        <use xlink:href="#play-ico"></use>
+                    </svg>
+                    <audio id="slider-container-play-audio">
+                        <source src="audio/podcasts/marx.mp3"/> 
+                    </audio>
+                    <p onclick="test()" id="slider-container-play-point">•</p>
+                    <svg id="pause-icon">
+                        <use xlink:href="#pause-ico"></use>
+                    </svg>
+                </div> 
+                <script>
+                    var radio = new Audio();
+                    radio.src = "audio/podcasts/marx.mp3";
+                    document.querySelector('#slider-container-play-point').onclick = function() {
+                    $('#slider-container-play-point').css('color', 'white');
+                    $('#slider-container-play').css('background', 'white');
+                    $('#slider-container-play-point').css('opacity', '1');
+                    $('#pause-icon').css('opacity', '1');
+                    if (radio.paused == true) {
+                    radio.play();
+                        document.querySelector('.radioPlay').innerHTML = 'pause';
+
+                    } else {
+                    radio.pause();
+                    $('.play-ico').css('opacity', '0');
+                    $('.play-ico2').css('opacity', '1');
+                    $('#slider-container-play-point').css('opacity', '0');
+                    $('#slider-container-play').css('background', '1f1f1f');
+                    $('#pause-icon').css('opacity', '0');
+                    document.querySelector('.radioPlay').innerHTML = 'play';
+                        }
+                    }
+                </script>
+                <div class="slider-container-img">
+                    <img class="slider-container-theimg" src="img/podcasts-img/marx.png">
+                </div>
+                <div class="slider-container-info">
+                    <div class="slider-container-info-authors"><p>1/1&emsp;|&emsp;	Рассказывает <a href="">Максим Луганский</a></p></div>
+                    <div class="slider-container-info-date"><p>10 минут</p></div>
+                </div>
+                <div class="slider-container-name">Стадии развития общества по Марксу</div>
+                <div class="slider-container-desk">Какова стадия развития  нынешнего общества по мнению коммунистического схоластика Карла Маркса? Подробнее о самом важном в этой лекции.</div>
+                <div class="slider-container-buttons">
+                    <div class="slider-container-buttons-inborder"><p>Читать</p></div>
+                    <div class="slider-container-buttons-inborder"><p>Скачать</p></div>
+                    <div class="slider-container-buttons-donate"><p>Пожертвовать средства авторам</p></div>
+                </div>
+            </div>
+            <div class="slider-container">  
+                <div id="slider-container-play">
+                    
+                    <svg class="play-ico2">
+                        <use xlink:href="#play-ico2"></use>
+                    </svg>
+                    <svg class="play-ico">
+                        <use xlink:href="#play-ico"></use>
+                    </svg>
+                    <audio id="slider-container-play-audio">
+                        <source src="audio/podcasts/marx.mp3"/> 
+                    </audio>
+                    <p onclick="test()" id="slider-container-play-point">•</p>
+                    <svg id="pause-icon">
+                        <use xlink:href="#pause-ico"></use>
+                    </svg>
+                </div> 
+                <script>
+                    var radio = new Audio();
+                    radio.src = "audio/podcasts/marx.mp3";
+                    document.querySelector('#slider-container-play-point').onclick = function() {
+                    $('#slider-container-play-point').css('color', 'white');
+                    $('#slider-container-play').css('background', 'white');
+                    $('#slider-container-play-point').css('opacity', '1');
+                    $('#pause-icon').css('opacity', '1');
+                    if (radio.paused == true) {
+                    radio.play();
+                        document.querySelector('.radioPlay').innerHTML = 'pause';
+
+                    } else {
+                    radio.pause();
+                    $('.play-ico').css('opacity', '0');
+                    $('.play-ico2').css('opacity', '1');
+                    $('#slider-container-play-point').css('opacity', '0');
+                    $('#slider-container-play').css('background', '1f1f1f');
+                    $('#pause-icon').css('opacity', '0');
+                    document.querySelector('.radioPlay').innerHTML = 'play';
+                        }
+                    }
+                </script>
+                <div class="slider-container-img">
+                    <img class="slider-container-theimg" src="img/podcasts-img/icepob.jpg">
+                </div>
+                <div class="slider-container-info">
+                    <div class="slider-container-info-authors"><p>1/1&emsp;|&emsp;	Рассказывает <a href="">Максим Луганский</a></p></div>
+                    <div class="slider-container-info-date"><p>10 минут</p></div>
+                </div>
+                <div class="slider-container-name">Основы психоанализа</div>
+                <div class="slider-container-desk">Какова стадия развития  нынешнего общества по мнению коммунистического схоластика Карла Маркса? Подробнее о самом важном в этой лекции.</div>
+                <div class="slider-container-buttons">
+                    <div class="slider-container-buttons-inborder"><p>Читать</p></div>
+                    <div class="slider-container-buttons-inborder"><p>Скачать</p></div>
+                    <div class="slider-container-buttons-donate"><p>Пожертвовать средства авторам</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="next n"><a href="#"><svg class="podcasts-container-arrow">
+                    <use xlink:href="#right-arrow"></use>
+                </svg></a></div>
+        
+        <script src="slider.js"></script>
+    </div>
+     
+     <div id="podcast-read-wrapper">
+        <div class="podcast-read-wrapper-container">
+            <div class="podcast-read-wrapper-cancel">
+                <svg class="podcast-read-wrapper-cancel-icon">
+                    <use xlink:href="#nav-cancel"></use>
+                </svg>
+            </div>
+            <div class="podcast-read-wrapper-container-name">Расшифровка</div>
+            <div class="podcast-read-wrapper-container-txt">
+            <p class="article-content-text-wrapper-txt">
+            Когда мы говорим о древности, первым делом надо сказать, что у нас есть два типа источников информации. Первый — это тексты, и вто­рой — это мате­риальные остатки, то есть вещи и контекст, в котором они были найдены. Текстами занимаются филология и история, которые работают рука об руку, и часто даже трудно сказать, исследователь древних текстов — кто он в боль­шей мере, филолог или историк. А материальными остатками древ­них циви­лизаций занимается археология.
+
+Изучение любой цивилизации, имевшей письменность, начинается с исследования созданных ею текстов. А потому начнем с текстов, которые дошли до нас из Античности.
+
+Какими же текстами мы обладаем для того, чтобы составить себе пред­ставление об античной культуре? Прежде всего, это разнообразные литера­турные сочинения, записанные повествования. Здесь надо сказать, что в Ан­тичности и в Средневековье долгое время различие между литературой и, ска­жем, наукой практически не делалось, или оно не было очень жестким. Напри­мер, многие научные сведения излагались в поэтической форме, в форме поэм, поэтому лучше говорить не о литературе и о науке, а скорее о словесности в целом.
+
+Греческая словесность возникает раньше, чем римская, и начинается она с поэтических произведений. Самые ранние произведения, которые дошли до нас, — это поэмы Гомера.
+
+Ученые долго спорили о том, кто такой Гомер и существовал ли такой человек в принципе. Но сегодня уже более или менее все согласны с тем, что вначале многочисленные поэмы о деяниях героев были устными и передава­лись от певца к певцу. Певцы эти назывались аэдами, но их имен мы, конечно, не знаем. Когда эти поэмы начали складываться, тоже неизвестно, но, видимо, еще во II тысячелетии до н. э. — поскольку именно тогда происходили некото­рые упоми­наемые в них события. Те же поэмы, которые мы знаем под именем «гомеровских», видимо, были созданы во второй половине VIII века до н. э., когда в Греции вошла в обиход письменность на основе этих древних преданий. Тогда же они были впервые записаны.
+
+Вот, например, так начинается поэма «Илиада»:
+
+Гнев, богиня, воспой Ахиллеса, Пелеева сына,
+Грозный, который ахеянам тысячи бедствий содеял,
+Многие души могучие славных героев низринул
+В мрачный Аид и самих распростер их в корысть плотоядным
+Птицам окрестным и псам (совершалася Зевсова воля)… 
+ 
+
+В этих эпических поэмах излагаются различные события из жизни героев, которые были древними героями уже и в VIII веке до н. э., и мифологичес­кие сюжеты.
+
+Вслед за этими эпическими поэмами появились и другие жанры поэтических произведений. Более авторская лирика. А проза появилась гораздо позже — только в VI веке до н. э.
+
+Одними из самых ранних произведений были те, которые мы называем исто­рическими, то есть рассказывающие о прошлом. Само слово «история» (historia) означает «исследование». И первый автор, которого принято называть «отцом истории», Геродот, занимался не систематическим изложением исто­рии, а вопросом о взаимоотношениях между греческими и негреческими куль­турами, Греции и внешнего мира. Его произведения стали называть «исто­рией», потому что это и было «исследованием».
+
+Вот фрагмент из четвертой книги «Истории» Геродота, где речь идет о земле, которую античные авторы называют Скифией:
+
+«Итак, области до этих лысых людей нам еще знакомы, о том же, что выше их, никто с точностью сказать не может. Эти страны отделяют высокие, недоступные горы, и никто их еще не переходил. По словам лысых, на горах обитают, хотя я этому не верю, козлоногие люди, а за этими горами — дру­гие люди, которые спят шесть месяцев в году. Этому‑то я уж вовсе не верю». 
+ 
+
+Впоследствии появилась довольно обширная литература самых разных жанров. Собственно, эта литература до нас дошла и является одним из главных источ­ников наших сведений об Античности.
+
+Но далеко не всё, что было написано в Античности, дожило до наших дней. Например, в «Илиаде» и «Одиссее» речь идет о двух срав­ни­тельно небольших эпизодах из истории Троянской войны — и вполне вероятно, что эти две поэмы были частью большого несохра­нивше­гося цикла. Точно оценить, какая доля всей античной словесности до нас дошла, невозможно — но прак­тически наверняка это счита­ные проценты, а может, даже доли процента. Почему это произошло? И как текстам, которые до нас все-таки дошли, уда­лось избежать общей участи?
+
+Рукописи недолговечны, даже при самых лучших условиях хранения они поги­бают, и нужно их время от времени переписывать. Составление одной копии требует больших затрат и времени, и сил.
+
+А поскольку копии были дороги, переписывались те тексты, которые пользова­лись спросом. Это похоже на современную систему print on demand 
+ 
+: изготав­ливается ровно столько копий, сколько нужно для заказчика. Если человек жела­ет иметь у себя какую-то рукопись, он заказывает ее копию, а так просто она не будет изготавливаться. Результатом был такой естественный отбор сочине­ний: выживали, продолжали свою жизнь в копиях те тексты, которые больше читались. Поэтому уже к середине античной эпохи, к эллинистическо­му вре­мени встречаются упоминания о том, что такой-то текст, о котором пи­шут, что он существовал, сейчас потерян. Его копий нет.
+
+В древности создавались библиотеки, и было некоторое количество крупных библиотек, в которых собирались разные рукописи, в том числе и редкие. Самая известная — это Александрийская библиотека в Египте; были библиоте­ки и в других местах: в Пергаме, в Эфесе, в разных крупных центрах образова­ния. Эти библиотеки содержали и редкие рукописи, а не только наиболее рас­хожие. Ну а самые расхожие — это, понятно, те тексты, которые использова­лись в школьном образовании. Поэтому у нас больше всего копий тех текстов, которые использовались в школе.
+
+К сожалению, в конце Античности и в раннее Средневековье все крупные биб­лиотеки погибли. В Средневековье как в Западной Европе, так и в Восточной, в Греции например, в православных областях Византийской империи, рукописи сохранялись и переписывались в монастырях. При этом переписывались, есте­ственно, тексты в первую очередь христианские, связанные с толкованием Вет­хого и Нового Завета, но не только: переписывали и античные тексты, которые представляли интерес для средневековых ученых читателей. В результате тут тоже происходил отбор текстов, но уже по совсем другим принципам. Вкусы средневекового человека совсем не всегда совпадали со вкусами античного человека. 
+
+Ну вот, например, был такой античный географ Страбон (I век до н. э. — I век н. э.). Он считается важным географом. В то же время в Античности он не пользовался никакой популярностью. Страбон составил компиляцию из отрывков сочинений своих более знаменитых и лучших предшественников и их пересказов, сделал из них такую вроде как хрестоматию, в которой куски разных текстов часто шиты практически белыми нитками.
+
+Вот как звучит типичный отрывок из «Географии» Страбона:
+
+«Кте­сий утвер­жда­ет, что Индия не мень­ше осталь­ной Азии; по Оне­си­кри­ту, она состав­ля­ет тре­тью часть оби­та­е­мо­го мира, а Неарх счи­та­ет, что путе­ше­ствие толь­ко по рав­нине зани­ма­ет 4 меся­ца. Одна­ко Мега­сфен и Деимах более уме­рен­ны в сво­их рас­че­тах, так как пола­га­ют рас­сто­я­ние от Южно­го моря до Кав­ка­за „свы­ше 20 000 ста­дий“». 
+ 
+
+Но для средневекового человека это было удобно, потому что представ­ляло собой такую компактную энциклопедию географии. Поэтому в Средние века именно этот текст стал очень популярным, и именно его переписывали, — а те тексты, на которых основывался Страбон и которые на самом деле были лучше и в Античности были гораздо более знамениты, исчезли, и мы их не зна­ем. Античную географию мы знаем вот по этому тексту Страбона, который сохранился именно потому, что он был значим для средневековых людей.
+
+Ну или другой пример — латинский поэт Катулл, наверное самый знаменитый латинский лирический поэт, — существует масса его переводов на все языки, он сильно повлиял на новую европейскую поэзию и так далее.
+
+Вот одно из самых известных его стихотворений:
+
+И ненавижу ее и люблю. Почему же? — ты спросишь.
+Сам я не знаю, но так чувствую я, и томлюсь. 
+ 
+
+Катулл не был очень популярен в Средневековье, хотя в Античности, конечно, был. И поэтому в Средние века его переписывали редко. В результате стихо­творения Катулла до нас дошли в одной-единственной рукописи. Так что наши представления о словесности Античности очень неполные и часто, мож­но сказать, довольно случайные.
+
+С началом эпохи Возрождения возник огромный интерес к античной сло­весности. Гуманисты первыми стали подробно изучать библио­теки мона­сты­рей, в которых могли сохраниться тексты греческих и римских авторов, и пуб­ликовать свои находки. Этот интерес с тех пор не угасал, и уже к концу XIX ве­ка практически все, что можно было найти в библиотеках, было издано.
+
+Зато примерно в то же время возник новый, неожиданный источник текстов: оказалось, что в некоторых районах Египта, благодаря очень сухой почве, пре­красно сохранились многие древние материалы, и в том числе папирус.
+
+Папирус был наиболее распространенным в Античности писчим материа­лом, как сейчас бумага. Но он почти нигде не сохраняется, кроме Египта. Папи­русы, на которых писались разные произ­ведения, использовались в поздней Антич­ности для изготовления так называемых картонажей — это такие погре­баль­ные саркофаги, которые изготовлены из многочисленных склеенных слоев папи­руса. Реставраторы их разбирают на отдельные папирусы, и это тоже такая довольно кропотливая работа.
+
+Подавляющее большинство текстов, которые сохранились на папирусах, — это деловые документы: письма, счета, расписки и так далее. Они тоже инте­рес­ны, но для литературы они, естественно, ничего не дают. Но время от вре­мени на папирусах встречаются и фрагменты текстов, которые в книгах до нас не дошли.
+
+Сегодня такие находки тоже иногда случаются, хотя уже не так часто, как сто лет назад. Например, три года назад были найдены тексты двух новых сти­хо­творений Сапфо, одно из них — почти целиком. Вот его начало:
+
+Все щебечешь ты: вот Харакс вернется
+С полным трюмом груза! Но это только
+Зевсу и богам может быть известно,
+     Будь же скромнее.
+Лучше повели мне теперь осыпать
+Многими мольбами царицу Геру,
+Чтобы воротился Харакс и судно
+     Целым оставил,
+Чтобы невредимыми нас нашел он;
+Прочее — как будет богам угодно,
+Ибо наступает всегда затишье
+     Следом за бурей. 
+ 
+
+Эта находка стала сенсацией: до нее мы знали лишь одно стихотво­рение Сапфо целиком. Но ценность папирусов еще и в том, что тексты, которые на них написаны, не прошли через средневековую монастырскую цензуру. Они помо­гают понять, что люди читали в Античности.
+
+Хотя это отражает культуру только одного региона античного мира — Египта эллинистического и римского времени, — но эти данные более или менее можно экстраполировать и на остальные регионы.
+
+
+Гомер. Современная копия с оригинала эпохи эллинизма
+Museum für Abgüsse Klassischer Bildwerke; Wikimedia Commons
+Большая часть находок литературных текстов в папирусах повторяет то, что нам известно по рукописям. Самыми распространенными были тексты Гомера. Это подтверждает и то, что мы знаем из других источников: основой греческо­го образования было изучение поэм Гомера, и большая часть образованных греков знала наизусть очень значительную часть поэм. Поэтому они и перепи­сывались для школы.
+
+
+Фукидид. Римская копия около 100 года н. э. с греческого оригинала начала IV века до н. э.
+Holkham Hall; Wikimedia Commons
+Среди других текстов сохранилось довольно много рукописей Фукидида, атти­ческого историка V века до н. э., но подавляющее большинство сохранившихся в папирусах кусков текста относится к его первой книге. Их больше, чем фраг­ментов всех остальных книг. Это свидетельствует о том, что в школе изучалась именно первая книга Фукидида. 
+
+Эта книга, которую называют также «Историей Пелопоннесской войны», посвящена войне между Афинами и Спартой в V веке до н. э. Сам Фукидид так описывает свой труд:
+
+«Мое исследование при отсутствии в нем всего баснословного, быть мо­жет, покажется малопривлека­тельным. Но если кто захочет исследовать достоверность прошлых и возможность будущих событий (могущих когда-нибудь повториться по свой­ству человеческой природы в том же или сходном виде), то для меня будет достаточно, если он сочтет мои изы­ска­ния полезными. Мой труд создан как достояние навеки, а не для минутного успеха у слушателей». 
+ 
+
+На том, чтобы найти текст, работа историка не заканчивается — скорее, здесь она и начинается. Потому что дальше этот текст нужно грамотно проанали­зировать — а для этого первым делом нужно понять, кто, когда и зачем его написал и каким образом эти обстоя­тельства могли на него повлиять. И ко­нечно, фрагментарность тек­стов, сохранившихся от Античности, усложняет эту задачу.
+
+Мы не можем и не должны верить всему, что написано в тексте. Любой текст отражает точку зрения автора, различные предрассудки и представления, которые существуют как в голове у него самого, так и у всего его поколения и окружения. И поэтому, если мы хотим восстановить реальную картину, нам нужно разные источники сопоставлять между собой. Для этого исторической наукой разработаны специальные методы. Стандартным способом выяснить, насколько достоверно то или иное сообщение, является его сопоставление с не­зависимым сообщением. Собственно, этим занимается критика источников.
+
+Итак, мы поговорили о словесности. Но ею тексты, с которыми могут работать исследователи, конечно же, не исчерпываются. Существуют и другие виды письменных источников.
+
+Античное государство, как и любое другое, в процессе своей деятельности производило разные тексты нехудожественного характера, не относящиеся к словесности, — документы. В древности, как и в Новое время, такие тексты хранились в архивах, но древние архивы до нас не дошли. Зато в Античности существовало обыкновение наиболее важные документы высекать на камне. Например, постановления властей, законы, судебные документы, документы о тяжбах — то есть документы очень разного типа. Документы, написанные на твердых носителях — на камне и на металле, постоянно находят во время археологических раскопок. Подсчитано, что в Средиземноморье в результате раскопок в год находят около пяти тысяч новых текстов. Так что надписи дают нам постоянный приток нового материала, и это не оставляет античников без работы.
+                </p></div></div>
+         <script>
+                    $('.slider-container-buttons-inborder:first-child').click(function(){
+                    $('#podcast-read-wrapper').slideDown(300);
+                    });
+                    
+                    $('.podcast-read-wrapper-cancel-icon').click(function(){
+                    $('#podcast-read-wrapper').slideUp(400);
+                    });    
+                </script>
+     </div>
+     
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-content-name">&laquo;Ижица&raquo;</div>
+            <div class="footer-content-navlinks">
+                <a href="about.html"><p class="footer-content-navlinks-text-main">О ПРОЕКТЕ</p></a>
+                <a href="subscribe.html"><p class="footer-content-navlinks-text">ПОДПИСКА</p></a>
+                <a href="mailto:izhitsa.magazine@protonmail.com"><p class="footer-content-navlinks-text">ОБРАТНАЯ СВЯЗЬ</p></a>
+                <a href=""><p class="footer-content-navlinks-text">НАША СЕТЬ</p></a>
+            </div>
+            <div class="footer-content-hr"></div>
+            <div class="footer-content-soclinks">
+                <div class="footer-content-soclinks-section">
+                    <div class="footer-content-soclinks-imgwrap"><img class="footer-content-soclinks-img" src="img/logotype's/vk logo.png">
+                    </div>
+                    <div class="footer-content-soclinks-section-text"><p>ВКонтакте</p></div>
+                </div>
+                <div class="footer-content-soclinks-section">
+                    <div class="footer-content-soclinks-imgwrap"><img class="footer-content-soclinks-img" src="img/logotype's/youtube logo.png">
+                    </div>
+                    <div class="footer-content-soclinks-section-text"><p>Youtube</p></div>
+                </div>
+                <div class="footer-content-soclinks-section">
+                    <div class="footer-content-soclinks-imgwrap"><img class="footer-content-soclinks-img" src="img/logotype's/telegram logo.png">
+                    </div>
+                    <div class="footer-content-soclinks-section-text"><p>Telegram</p></div>
+                </div>
+                <div class="footer-content-soclinks-section">
+                    <div class="footer-content-soclinks-imgwrap"><img class="footer-content-soclinks-img" src="img/logotype's/rozanov.png">
+                    </div>
+                    <div class="footer-content-soclinks-section-text"><p>Розанов Клуб</p></div>
+                </div>
+                <div class="footer-content-soclinks-section">
+                    <div class="footer-content-soclinks-imgwrap"><img class="footer-content-soclinks-img" src="img/logotype's/voz.png">
+                    </div>
+                    <div class="footer-content-soclinks-section-text"><p>Возв. Европы</p></div>
+                </div>
+            </div>
+            <div class="footer-content-hr"></div>
+            <div class="footer-content-description"><p>Журнал русского консервативного общества «Ижица». Копирование материалов сайта без разрешения запрещено &copy; Izhitsa Magazine 2020</p></div>
+            <div class="footer-content-signature"><p><a href="https://t.me/helgeheyer">c’est severus</a> x <a href="">amaydane</a></p></div>
+        </div>
+    </footer>
+
+    </body>
+</html>
